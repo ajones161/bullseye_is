@@ -1,0 +1,361 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family:arial;
+}
+
+button {
+    cursor:pointer;
+}
+
+
+#header {
+    width:100%;
+    height:60px;
+    background-color:#4b6069;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    overflow:hidden;
+}
+
+.logo {
+    display:inline-block;
+    float:left;
+    padding:5px;
+}
+
+.logo img {
+    max-width:50px;
+    max-height:50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+#panel {
+    background-color:white;
+    width:100%;
+    margin-top:6%;
+    border-top:1px solid lightgrey;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+#panel table {
+    width:100%;
+}
+
+.userInfo {
+    color:white;
+    float:left;
+    height:100%;
+    padding:11px 20px;
+    font-weight:700;
+}
+
+.logButtons {
+    float:right;
+    height:100%;
+}
+
+.logButtons button, .logButtons a {
+    display:inline-block;
+    height:100%;
+    border: 0;
+    background-color:transparent;
+    padding-right:20px;
+    padding-left:20px;
+    color:white;
+    box-sizing:border-box;
+    font-weight:700;
+}
+
+#top {
+    display:inline-block;
+    height:100%;
+}
+
+.screen {
+    width:98%;
+    float:left;
+    min-height:500px;
+    padding:10px;
+}
+
+#panel table, tr, th {
+    border: solid thin lightgrey;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+#panel table {
+    width: 100%;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
+
+#panel th {
+    padding:5px;
+    background-color:#cccccc;
+    color:#4b6069;
+    text-align:left;
+}
+
+#panel td {
+    padding:5px;
+}
+
+#panel tr:nth-of-type(2n + 1) {
+    background-color:#eeeeee;
+}
+
+#panel tbody tr:hover {
+    background-color:#75aabf;
+}
+.hidden {
+    display:none;
+}
+
+#invPanel, #locPanel, #couPanel, #usrPanel, #itmPanel {
+    width: 100%;
+    border:1px solid lightgrey;
+    padding:20px;
+    box-sizing:border-box;
+    margin-bottom:10px;
+    overflow:hidden;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    
+}
+
+#usrTable {
+    width: 49%;
+    float:left;
+}
+
+#usrUpdate {
+    width: 49%;
+    margin-left:2%;
+    border: 1px solid lightgrey;
+    box-sizing:border-box;
+    float:left;
+    padding:20px;
+    line-height:160%;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
+
+.update {
+    width: 60%;
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:160%;
+}
+
+.reorder {
+    background-color:#c43737!important;
+    color:white;
+}
+
+.low {
+    background-color:#ffa361!important;
+}
+
+#addBtn, #upd8Btn, #loss {
+    float:right;
+    margin-right:10px;
+}
+
+.float {
+    float:left;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#invPanel .update {
+    width: 80%;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+#invPanel .update {
+    width: 30%;
+}
+
+#invPanel label {
+    width: 150px;
+}
+
+.clicked {
+    background-color:#75aabf !important;
+}
+
+#switcher {
+    display:inline-block;
+}
+
+table td > div {
+    overflow: hidden;
+    height: 20px;
+}
+
+table td > div:hover {
+    height: auto;
+}
+
+#invTable td:nth-child(3) {
+    width:250px;
+}
+
+#invTable td:nth-child(6) {
+    width:200px;
+}
+
+#itmTable td:nth-child(2){
+    width:300px;
+}
+
+#itmTable td:nth-child(4){
+    width:300px;
+}
+
+.logButtons .active {
+    background-color:red;
+}
+
+.logButtons button:focus {
+    outline:none;
+}
+
+#bottomHalf th, td {
+    padding: 20px;
+}
+
+#topHalf, #bottomHalf {
+    overflow:hidden;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.selectContain {
+    float:left;
+    max-width:27%;
+}
+
+.selectContain select {
+    width: 100%;
+    font-family:consolas;
+}
+
+.selectContain option:nth-child(even) {
+    background-color:#eeeeee;
+}
+
+.shippingInfo {
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    width:24%;
+}
+
+.notes {
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    width:24%;
+}
+
+.buttons {
+    float:left;
+    padding:10px;
+    width:15%;
+    border: 1px solid black;
+    box-sizing:border-box;
+}
+
+.buttons button {
+    width: 100%;
+    height:30px;
+}
+
+.buttons button:nth-of-type(2) {
+    margin: 10px 0px;
+}
+.buttons button:nth-of-type(4) {
+    margin: 10px 0px;
+}
+
+.EMERGENCY {
+    background-color:red!important;
+    
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 999px) {
+    #burg {
+        display:inline-block;
+    }
+    #top {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 999px) {
+    #burg {
+        display:none;
+    }
+}

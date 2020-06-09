@@ -1,0 +1,322 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family:arial;
+}
+
+button {
+    cursor:pointer;
+}
+
+#header {
+    width:100%;
+    height:60px;
+    background-color:#4b6069;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.5);
+    overflow:hidden;
+}
+
+.logo {
+    display:inline-block;
+    float:left;
+    padding:5px;
+}
+
+.logo img {
+    max-width:50px;
+    max-height:50px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+#panel {
+    background-color:white;
+    width:100%;
+    margin-top:6%;
+    border-top:1px solid lightgrey;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+
+#panel table {
+    width:100%;
+}
+
+.userInfo {
+    color:white;
+    float:left;
+    height:100%;
+    padding:11px 20px;
+    font-weight:700;
+}
+
+.logButtons {
+    float:right;
+    height:100%;
+}
+
+.logButtons button {
+    display:inline-block;
+    height:100%;
+    border: 0;
+    background-color:transparent;
+    padding-right:20px;
+    padding-left:20px;
+    color:white;
+    box-sizing:border-box;
+    font-weight:700;
+}
+
+#top {
+    display:inline-block;
+    height:100%;
+}
+
+.screen {
+    width:98%;
+    float:left;
+    min-height:500px;
+    padding:10px;
+}
+
+#panel table, tr, th {
+    border: solid thin lightgrey;
+    border-collapse: collapse;
+}
+
+#panel table {
+    width: 100%;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
+
+#panel th {
+    padding:5px;
+    background-color:#cccccc;
+    color:#4b6069;
+    text-align:left;
+}
+
+#panel td {
+    padding:5px;
+}
+
+#panel tr:nth-of-type(2n + 1) {
+    background-color:#eeeeee;
+}
+
+.hidden {
+    display:none;
+}
+#usrTable {
+    width: 49%;
+    float:left;
+}
+
+#usrUpdate {
+    width: 49%;
+    margin-left:2%;
+    border: 1px solid lightgrey;
+    box-sizing:border-box;
+    float:left;
+    padding:20px;
+    line-height:160%;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
+
+.update {
+    width: 60%;
+    margin-top:2%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:160%;
+}
+
+.reorder {
+    background-color:#c43737!important;
+    color:white;
+}
+
+.low {
+    background-color:#ffa361!important;
+}
+
+#addBtn, #upd8Btn {
+    float:right;
+    margin-right:10px;
+}
+
+.float {
+    float:left;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#invPanel .update {
+    width: 80%;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+}
+
+.clicked {
+    background-color:#75aabf !important;
+}
+
+#switcher {
+    display:inline-block;
+}
+
+table td > div {
+    overflow: hidden;
+    height: 20px;
+}
+
+table td > div:hover {
+    height: auto;
+}
+
+#invTable td:nth-child(5) {
+    width:160px;
+}
+
+.logButtons .active {
+    background-color:red;
+}
+
+.logButtons button:focus {
+    outline:none;
+}
+
+#bottomHalf th, td {
+    padding: 20px;
+}
+
+#topHalf, #bottomHalf {
+    overflow:hidden;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.selectContain {
+    float:left;
+    max-width:20%;
+}
+
+.selectContain select {
+    width: 100%;
+    font-family:consolas;
+}
+
+.selectContain option:nth-child(even) {
+    background-color:#eeeeee;
+}
+
+.shippingInfo {
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    width:25%;
+}
+
+.notes {
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    width:30%;
+}
+
+.buttons {
+    float:left;
+    padding:10px;
+    width:15%;
+    border: 1px solid black;
+    box-sizing:border-box;
+}
+
+.buttons button {
+    width: 100%;
+    height:30px;
+}
+
+.buttons button:nth-of-type(2) {
+    margin: 10px 0px;
+}
+.buttons button:nth-of-type(4) {
+    margin: 10px 0px;
+}
+
+
+#itemForm {
+    line-height:160%;
+    float:left;
+    width:35%;
+    padding:10px 10px 10px 50px;
+    box-sizing:border-box;
+}
+
+.formButtons {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.formButtons button, #submit {
+    width: 30%;
+    height:50px;
+}
+
+#invPanel {
+    width:65%;
+    float:left;
+    overflow-y:hidden;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+#invTable {
+    max-height:500px;
+    overflow-y:scroll;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
+
+.faded {
+    opacity:0.3;
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+.hoverable tbody tr:hover {
+    background-color:#75aabf !important;
+}
+
+#searchInv {
+    margin-bottom:20px;
+}
+
+#searchInv input {
+    width:120px;
+}
+
+#cartTable {
+    margin-top:20px;
+}
+
+#total {
+    margin-top:10px;
+    float:right;
+}
